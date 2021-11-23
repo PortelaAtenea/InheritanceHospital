@@ -13,8 +13,8 @@ public class Main {
     public static void main(String[] args) {
         Planta p1 = new Planta();
         Direccion d1= new Direccion("dasd","dsa");
-        Celador c01= new Celador("39458864H",154525,"Alberto",d1,545443,32);
-        Limpieza l1 = new Limpieza("39458864H",154525,"Sergio",d1,545443,32);
+        Celador c01= new Celador("39458864H",154525,"Alberto",d1,545443,45);
+        Limpieza l1 = new Limpieza("39458864H",154525,"Sergio",d1,545443,21);
         Consulta c1 = new Consulta();
         p1.addLimp(l1);
         p1.addCons(c1);
