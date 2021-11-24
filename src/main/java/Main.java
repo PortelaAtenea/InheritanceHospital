@@ -32,14 +32,15 @@ public class Main {
         Direccion3 d31= new Direccion3("calle centrar","123456");
         Celador3 c03= new Celador3("39458864H",154525,"Alberto",d3,545443,32);
         Limpieza3 l3 = new Limpieza3("39458864H",154525,"Sergio",d3,545443,32);
+        Limpieza3 l4 = new Limpieza3("123456789456",123456,"Sergiito",d3,456789456,100000);
+
         Limpieza3 l31 = new Limpieza3("36925814L",456789,"Señor de la limpieza",d31,123456789,756);
         Consulta3 c3 = new Consulta3();
         p3.addLimp(l3);
         p3.addLimp(l31);
         p3.addCons(c3);
-
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
-        EntityManager em = emf.createEntityManager();
+        EntityManager em = start(emf);
         em.getTransaction().begin();
         em.persist(l1);
         em.persist(c1);
@@ -63,5 +64,9 @@ public class Main {
         em.getTransaction().commit();
         em.close();
         emf.close();
+    }
+    public static EntityManager start(EntityManagerFactory emf) {
+
+        return emf.createEntityManager();
     }
 }
