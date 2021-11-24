@@ -20,15 +20,15 @@ public class Main {
         p1.addCons(c1);
 
         Planta2 p2 = new Planta2();
-        Direccion2 d2= new Direccion2("dasd","dsa");
-        Celador2 c02= new Celador2("39458864H",154525,"Alberto",d2,545443,32);
-        Limpieza2 l2 = new Limpieza2("39458864H",154525,"Sergio",d2,545443,32);
+        Direccion2 d2= new Direccion2("Calle laterar","123456");
+        Celador2 c02= new Celador2("39458864H",456123,"Alberto",d2,545443,32);
+        Limpieza2 l2 = new Limpieza2("39458864H",154525,"Sergio",d2,789132,32);
         Consulta2 c2 = new Consulta2();
         p2.addLimp(l2);
         p2.addCons(c2);
 
         Planta3 p3 = new Planta3();
-        Direccion3 d3= new Direccion3("dasd","dsa");
+        Direccion3 d3= new Direccion3("Calle noCentar","654321");
         Direccion3 d31= new Direccion3("calle centrar","123456");
         Celador3 c03= new Celador3("39458864H",154525,"Alberto",d3,545443,32);
         Limpieza3 l3 = new Limpieza3("39458864H",154525,"Sergio",d3,545443,32);
@@ -38,7 +38,7 @@ public class Main {
         p3.addLimp(l31);
         p3.addCons(c3);
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
-        EntityManager em = start(emf);
+        EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         em.persist(l1);
         em.persist(c1);
