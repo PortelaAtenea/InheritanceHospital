@@ -21,7 +21,7 @@ public class Main {
 
         Planta2 p2 = new Planta2();
         Direccion2 d2= new Direccion2("dasd","dsa");
-        Celador2 c02= new Celador2("39458864H",154525,"Alberto",d2,545443,32);
+        Celador2 c02= new Celador2("39458864H",154525,"Cosas",d2,545443,32);
         Limpieza2 l2 = new Limpieza2("39458864H",154525,"Sergio",d2,545443,32);
         Consulta2 c2 = new Consulta2();
         p2.addLimp(l2);
