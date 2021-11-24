@@ -28,3 +28,5 @@ Dale a tu cuerpo alegria macarena que tu cuerpo es pa´darle alegria y cosa buen
 Dale a tu cuerpo alegria macarena, heeeey macarena, aaay
 
 I would take a bullet just to prove my love, only to find out your are the one holding the gun
+
+25 de Diciembre fun fun fun, anananana, funfunfun, que felices seguiremos cundo vengas s mi lado????
