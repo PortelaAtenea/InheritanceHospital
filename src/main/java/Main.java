@@ -29,10 +29,13 @@ public class Main {
 
         Planta3 p3 = new Planta3();
         Direccion3 d3= new Direccion3("dasd","dsa");
+        Direccion3 d31= new Direccion3("calle centrar","123456");
         Celador3 c03= new Celador3("39458864H",154525,"Alberto",d3,545443,32);
         Limpieza3 l3 = new Limpieza3("39458864H",154525,"Sergio",d3,545443,32);
+        Limpieza3 l31 = new Limpieza3("36925814L",456789,"Señor de la limpieza",d31,123456789,756);
         Consulta3 c3 = new Consulta3();
         p3.addLimp(l3);
+        p3.addLimp(l31);
         p3.addCons(c3);
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
@@ -48,6 +51,7 @@ public class Main {
         em.persist(c02);
         em.persist(l3);
         em.persist(c3);
+        em.persist(l31);
         em.persist(p3);
         em.persist(c03);
 
