@@ -23,3 +23,8 @@ Considero que la mejor estrategia para este proyecto es
 una tabla para cada subclase.
 En este proyectos las subclases tienen distintas relaciones y metodos de las otras subclases
 y por eso creo que una tabla por cada subclase es la mejor opción.
+
+Dale a tu cuerpo alegria macarena que tu cuerpo es pa´darle alegria y cosa buena
+Dale a tu cuerpo alegria macarena, heeeey macarena, aaay
+
+I woudl take a bullet just to prove my love, only to find out your are the one holding the gun
