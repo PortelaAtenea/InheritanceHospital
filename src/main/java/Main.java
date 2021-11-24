@@ -37,9 +37,8 @@ public class Main {
         p3.addLimp(l3);
         p3.addLimp(l31);
         p3.addCons(c3);
-
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
-        EntityManager em = emf.createEntityManager();
+        EntityManager em = start(emf);
         em.getTransaction().begin();
         em.persist(l1);
         em.persist(c1);
@@ -63,5 +62,9 @@ public class Main {
         em.getTransaction().commit();
         em.close();
         emf.close();
+    }
+    public static EntityManager start(EntityManagerFactory emf) {
+
+        return emf.createEntityManager();
     }
 }
